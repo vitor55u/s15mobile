@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid #2563eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2563eb;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #2563eb;
+  }
+  
+  .theme-btn {
+    background: none;
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  :root {
+    --bg: #f0f4ff;
+    --text: #111111;
+  }
+  
+  body[data-theme="dark"] {
+    --bg: #0b1220;
+    --text: #e6eefc;
+  }
+  
